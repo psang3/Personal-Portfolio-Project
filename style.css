@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.sidebar{
+    background-color:rgb(0, 0, 0); 
+    width: 13.5vw;
+    font-family: "Reddit Mono", monospace;
+    height: 100vw;
+    color: white;
+}
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+
+.main{
+    /*background-color: yellow;*/
+    width: 86.5vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infocontainer{
+    /*background-color: rgb(188, 243, 251);*/
+    height: 50vh;
+    width: 80vw;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    height: 50vh;
+    border-radius: 50%;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 65px;
+}
+
+.name{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Fira Sans',sans-serif;
+    color: aliceblue;
+}
+
+.about{
+    font-size: 35px;
+}
+.button{
+    padding: 25px;
+}
+.btn{
+    background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover{
+    background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#element{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contactform{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 40px;
+}
+
+.contactform h1{
+    text-align: center;
+}
+
+.mb-3{
+    padding: 15px 0px;
+}
+
+.form-group{
+    padding: 15px 0px;
+    font-size: 30px;
+}
+
+.mb-3 div{
+    font-size: 10px;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.form-control{
+    width: 20vw;
+    border-radius: 12px;
+}
+
+.phone{
+    font-size: 20px;
+}
+
+.blogItem{
+    margin: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.blogcontainer h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 35px;
+}
+
+.main image{
+    height: 10px;
+    width: 10px;
+    display:flex;
+}
+
+.image img{
+    height: 80px;
+    width: 80px;
+    padding: 0px 60px;
+}
+
+.skillImage{
+    display: flex;
+}
+
+.skillImage img{
+    height: 80px;
+    width: 80px;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.intro h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.intro p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+@media(max-width: 1200px){
+    *{
+        /*background-color: red;*/
+    }
+    .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathik Sangani</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My intro</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="hello">Hi I am </div>
+                    <div class="name">Pathik Sangani</div>
+                    <span id="element"></span>
+                    <div class="moreabout">I am a Computer Science Student at University of Illinois at Chicago.I am interested in AI/ML and currently learning Full Stack Developemnt.</div>
+                    <div class="button">
+                        <a href="My Resume.pdf" target="_blank"><button class="btn">Resume</button></a>
+                        <a href="/contact.html"><button class="btn">Contact me</button></a>
+                    </div>
+                </div>
+                <div class="devpic">
+                    <img src="dev.JPG" alt="Pathik Sangani">
+                </div>
+            </div>
+            <div class="image">
+                <a href="https://github.com/psang3" target="_blank"><img src="github.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/pathik-sangani-33a374220/" target="_blank"><img src="linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/pathik.sangani/" target="_blank"><img src="instagram.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',{
+            strings : ['Web Developer','CS Student @ UIC','Aspiring SWE'],
+            typespeed : 5,
+        });
+    </script>
+</body>
+</html>
